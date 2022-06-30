@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/demo1/demo1",
+    "pages/demo2/demo2",
+    "pages/demo3/demo3",
+    "pages/write_note/write_note"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#95CACA",
+    "navigationBarTitleText": "自律小助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#D1E9E9",
+    "selectedColor": "000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "每日一言",
+        "iconPath": "icon/_home.png",
+        "selectedIconPath": "icon/home.png"
+      },
+      {
+        "pagePath": "pages/demo1/demo1",
+        "text": "备忘录",
+        "iconPath": "icon/activity.png",
+        "selectedIconPath": "icon/activity_fill.png"
+      },
+      {
+        "pagePath": "pages/demo2/demo2",
+        "text": "学习打卡",
+        "iconPath": "icon/_time.png",
+        "selectedIconPath": "icon/time.png"
+      },
+      {
+        "pagePath": "pages/demo3/demo3",
+        "text": "排行榜",
+        "iconPath": "icon/barrage.png",
+        "selectedIconPath": "icon/barrage_fill.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,11 @@
+<view>
+  <image class='background' src="http://m.qpic.cn/psc?/V52mh45403Z1Uq4bNSfl3sXg8V1EjVAh/45NBuzDIW489QBoVep5mcZQqf6gnGUiIgvUpgT2QCc7QDz3l99MnFZFmitae0flwhYnNZD0kSa4mzXkQnPjGPXrzMTpWP*vif4UzHRCVcbw!/b&bo=wAOABwAAAAABF3Q!&rf=viewer_4&t=5" mode="aspectFill"></image>
+    <view wx:for="{{rankList}}" wx:key="index">
+      <image class="info-avatar" src="{{item.avatarUrl}}"></image>
+        <view class='a't>第{{index+1}}名</view>
+        <view class="b">{{item.score}}分</view>
+        <view class='c'>{{item.nickName}}</view>
+      
+        <view class="view_line" style="margin-top: 10rpx;"></view>
+  </view>
+  </view>

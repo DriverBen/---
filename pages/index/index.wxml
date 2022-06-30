@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="content">
+  <image class='background' src="http://m.qpic.cn/psc?/V52mh45403Z1Uq4bNSfl3sXg8V1EjVAh/45NBuzDIW489QBoVep5mcZQqf6gnGUiIgvUpgT2QCc7QDz3l99MnFZFmitae0flwhYnNZD0kSa4mzXkQnPjGPXrzMTpWP*vif4UzHRCVcbw!/b&bo=wAOABwAAAAABF3Q!&rf=viewer_4&t=5" mode="aspectFill"></image>
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="click">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="click" class="userinfo-avatar" src="{{app.globalData.userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{app.globalData.userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{fu1}}{{hitokoto}}{{fu2}}\n{{fu}}{{from}}</text>
+  </view>
+</view>
+</view>

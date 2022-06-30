@@ -1,0 +1,10 @@
+{
+  "comment":"配置window不需要key。直接写属性",
+  "usingComponents": {},
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#95CACA",
+  "navigationBarTitleText": "新增",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": false,
+  "backgroundColor": "#c1c1c1"
+}

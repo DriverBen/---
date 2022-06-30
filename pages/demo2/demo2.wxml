@@ -1,0 +1,19 @@
+<!--pages/demo2/demo2.wxml-->
+<view class="content">
+  <image class='background' src="http://m.qpic.cn/psc?/V52mh45403Z1Uq4bNSfl3sXg8V1EjVAh/45NBuzDIW489QBoVep5mcZQqf6gnGUiIgvUpgT2QCc7QDz3l99MnFZFmitae0flwhYnNZD0kSa4mzXkQnPjGPXrzMTpWP*vif4UzHRCVcbw!/b&bo=wAOABwAAAAABF3Q!&rf=viewer_4&t=5" mode="aspectFill"></image>
+  <view class="border-container">
+  <view class="border_text" >
+    <text class="count-up" >今日已自习：</text>
+   <text class="count-down" >{{displayTime}}</text>
+   <text class="ideaa">做最好的自己</text>
+  </view>
+  </view>
+  <view class="button-container">
+
+<view class="button-start-circle">
+  <view class="button-start" bindtap="startOrPauseTimer">
+    <text class="button-text">{{startPauseButtonText}}</text>
+  </view>
+</view>
+</view>
+</view>

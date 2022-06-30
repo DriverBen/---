@@ -1,0 +1,22 @@
+/**app.wxss**/
+page {
+  --red_e5: #e54d42;
+  --color_grey_dd: #dddddd;
+  --color_grey_e8: #e8e8e8;
+  --color_grey_999: #999999;
+  --color_grey_666: #666666;
+  --color_black: #000000;
+  --color_white: #ffffff;
+  --color_godden_dark: #b68d45;
+  --color_orange_main: #FF791B;
+  --color_white: #ffffff;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

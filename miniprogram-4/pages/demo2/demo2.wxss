@@ -1,0 +1,106 @@
+/* pages/demo2/demo2.wxss */
+page {
+  height: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+  }
+  .border_text {
+
+    justify-content: space-around;
+    width: 100%;
+    align-items: space-around;
+    width: 250px;
+    height: 250px;
+    border: 1px solid  var(--color_grey_666);
+    border-radius:50%;
+    line-height: 100rpx;
+
+  }
+  .count-up {
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25rpx;
+    padding-top: 60rpx;
+  
+    font-size: 30rpx;
+    font-weight: 600;
+    line-height: 100rpx;
+    color:white;
+    text-shadow:2px 2px 4px #8d8b8b;
+  }
+  .count-down {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25rpx;
+    font-size: 100rpx;
+    font-weight: 600;
+    line-height: 50rpx;
+    color:white;
+    text-shadow:2px 2px 4px #8d8b8b;
+  } 
+  .ideaa {
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25rpx;
+    font-size: 40rpx;
+    font-weight: 600;
+    line-height: 50rpx;
+    color:white;
+    text-shadow:2px 2px 4px #8d8b8b;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+    width: 100%;
+    align-items: space-around;
+    padding-top: 500rpx;
+  }
+  .border-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+    width: 100%;
+    align-items: space-around;
+    padding-top: 60rpx;
+  }
+  .button-start-circle{
+    background-color :transparent;
+    height: 190rpx;
+    width: 190rpx;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-start {
+    display: flex;
+    color: white;
+    background-color:transparent;
+    height: 170rpx;
+    width: 170rpx;
+    border: 1px solid var(--color_grey_666);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .button-text {
+    font-size: 1.5em;
+    font-weight: 400;
+  }

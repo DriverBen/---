@@ -1,0 +1,48 @@
+<view class="content">
+  <image class='background' src="http://m.qpic.cn/psc?/V52mh45403Z1Uq4bNSfl3sXg8V1EjVAh/45NBuzDIW489QBoVep5mcZQqf6gnGUiIgvUpgT2QCc7QDz3l99MnFZFmitae0flwhYnNZD0kSa4mzXkQnPjGPXrzMTpWP*vif4UzHRCVcbw!/b&bo=wAOABwAAAAABF3Q!&rf=viewer_4&t=5" mode="aspectFill"></image>
+<wxs module="time" src="../../utils/time_utils.wxs"></wxs>
+<view class="container">
+  <view class="view_line"></view>
+  <view class="search_container">
+    <input class="search_input" bindinput="search_change" type="text" placeholder="请输入搜索内容" />
+    <image src="../../icon/search.png" class="image_search"></image>
+  </view>
+  <view class="view_menu">
+    <image class="image_menu" src="../../icon/menu.png" bindtap="switchLayout" />
+    <view class="view_orderby">
+      <text class="text_orderby" bindtap="orderBy">{{orderbyItemList[orderbyIndex]}}</text>
+      <image src="../../icon/chevron-down.png" class="image_orderby"></image>
+    </view>
+  </view>
+  <view style="margin-top: 10rpx;margin-left: 5%;margin-right: 5%;width: 90%;background-color: var(--color_grey_dd);height: 1rpx;">
+  </view>
+  <view wx:if="{{isListView==true}}" style="width: 100%;padding-bottom: 80rpx;flex: 1;">
+    <view style="width:90%;margin-left:5%;margin-right: 5%;margin-top: 20rpx;height: auto;" wx:for="{{list}}" wx:key="note_id"
+      bindtap="showAction" data-item="{{item}}" data-index="{{index}}">
+      <view class="view_note">
+        <text class="text_title">{{item.title}}</text>
+        <view style="width: 100%;display: flex;flex-direction: row;margin-top: 10rpx;">
+          <text class="text_time">{{orderbyIndex==1?time.getTime(item.add_time):time.getTime(item.update_time)}}</text>
+          <text class="text_content">{{item.content}}</text>
+        </view>
+        <view class="view_line" style="margin-top: 10rpx;"></view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{isListView==false}}" style="width: 100%;padding-bottom: 80rpx;flex: 1;">
+    <view style="width:90%;margin-left:5%;margin-right: 5%;margin-top: 20rpx;height: auto;" wx:for="{{list}}" wx:key="note_id"
+      bindtap="showAction" data-item="{{item}}" data-index="{{index}}">
+      <view class="view_note_grid">
+        <text class="text_title_grid">{{item.title}}</text>
+        <text class="text_content_grid">{{item.content}}</text>
+        <text
+          class="text_time_grid">{{orderbyIndex==1?time.getTime(item.add_time):time.getTime(item.update_time)}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="view_bottom">
+    <text class="text_count ">{{list.length}}条待办</text>
+    <image class="image_insert_note" src="../../icon/plus.png" bindtap="gotoWriteNote"></image>
+  </view>
+</view>
+</view>
